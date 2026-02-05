@@ -1,0 +1,9 @@
+# Ignore any files/dirs starting with "__"
+__*
+
+# Ignore any files/dirs starting with "."
+.*
+
+# But keep this file tracked
+!.gitignore
+
