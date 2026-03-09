@@ -7,3 +7,15 @@ __*
 # But keep this file tracked
 !.gitignore
 
+# Ignore editable install metadata from `pip install -e .`
+*.egg-info/
+
+# --- Keep only toy_example/1_align tracked ---
+# Ignore everything under toy_example
+Preprocess/src/toy_example/**
+# Re-include the directories needed for unignore to work
+!Preprocess/src/toy_example/
+!Preprocess/src/toy_example/1_align/
+# Keep all files under 1_align
+!Preprocess/src/toy_example/1_align/**
+

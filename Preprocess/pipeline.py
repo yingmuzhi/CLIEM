@@ -18,7 +18,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from delete_redundant_BG import delete_redundant_background
+from .delete_redundant_BG import delete_redundant_background
 
 
 def bool_to_str(value: bool) -> str:
@@ -37,7 +37,8 @@ def build_parser() -> argparse.ArgumentParser:
     general = parser.add_argument_group("General")
     general.add_argument(
         "--base-dir",
-        default="/Volumes/T7/20251204_halfCell/src/code_analysis2",
+        default="/Volumes/T7/20251204_halfCell/CLEM_code/Preprocess/src/toy_example",
+        # default="/Volumes/T7/20251204_halfCEll/src/code_analysis2",
         help="Base directory for all pipeline stages. If provided, automatically generates:\n"
              "  - pad_input: {base_dir}/1_align\n"
              "  - pad_output: {base_dir}/2_pad\n"

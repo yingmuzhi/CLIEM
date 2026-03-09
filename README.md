@@ -1,4 +1,4 @@
-# Preprocess (SEM) — CLEM_code
+# Preprocess (SEM) — CLIEM_code
 
 This repository contains a set of scripts under `Preprocess/` to preprocess SEM image slices (typically exported as per-slice TIFFs, grouped by parts) and generate a corrected, reconstructed stack ready for downstream analysis.
 
@@ -8,11 +8,13 @@ Most scripts ship with **dataset-specific default paths** (e.g. `/Volumes/T7/...
 
 ### 1) Create a Python environment
 
-Use Python 3.9+ (3.11 recommended). Install the common dependencies used across scripts:
+Use Python 3.9+ (3.11 recommended). Install all dependencies with one command:
 
 ```bash
-python -m pip install numpy tifffile pillow scipy pandas tqdm natsort matplotlib
+pip install -e .
 ```
+
+**Docker** and **Anaconda** are also recommended.
 
 ### 2) Prepare an input folder (`base_dir`)
 
