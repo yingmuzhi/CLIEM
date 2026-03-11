@@ -2,7 +2,7 @@
 Author: yingmuzhi cyxscj@126.com
 Date: 2026-03-09 15:32:01
 LastEditors: yingmuzhi cyxscj@126.com
-LastEditTime: 2026-03-09 15:56:46
+LastEditTime: 2026-03-11 09:39:59
 FilePath: /CLIEM_code/setup.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -40,8 +40,10 @@ setup(
         "tqdm",
         "natsort",
         "matplotlib",
+        "seaborn",
         "ipykernel",
         "imagecodecs",
+        "xlrd",
     ],
     entry_points={
         "console_scripts": [

@@ -7,6 +7,9 @@ __*
 # But keep this file tracked
 !.gitignore
 
+# Always ignore macOS dot-underscore files
+**/._*
+
 # Ignore editable install metadata from `pip install -e .`
 *.egg-info/
 
@@ -18,4 +21,21 @@ Preprocess/src/toy_example/**
 !Preprocess/src/toy_example/1_align/
 # Keep all files under 1_align
 !Preprocess/src/toy_example/1_align/**
+
+# --- Keep only selected Analysis toy example data ---
+# Ignore everything under Analysis/src/toy_example
+Analysis/src/toy_example/**
+# Re-include the directories needed for unignore to work
+!Analysis/src/toy_example/
+!Analysis/src/toy_example/contactSites_src/
+!Analysis/src/toy_example/ground_truth/
+!Analysis/src/toy_example/origin/
+!Analysis/src/toy_example/prediction/
+!Analysis/src/toy_example/volume_surf_ins_src/
+# Keep all files under the allowed directories
+!Analysis/src/toy_example/contactSites_src/**
+!Analysis/src/toy_example/ground_truth/**
+!Analysis/src/toy_example/origin/**
+!Analysis/src/toy_example/prediction/**
+!Analysis/src/toy_example/volume_surf_ins_src/**
 
