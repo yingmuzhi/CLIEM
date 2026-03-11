@@ -1,8 +1,15 @@
 # Preprocess (SEM) — CLIEM_code
 
-This repository contains a set of scripts under `Preprocess/` to preprocess SEM image slices (typically exported as per-slice TIFFs, grouped by parts) and generate a corrected, reconstructed stack ready for downstream analysis.
+This repository contains two main parts:
+
+- **Preprocess** (`Preprocess/`): preprocessing SEM image slices (typically exported as per-slice TIFFs, grouped by parts) to generate a corrected, reconstructed stack ready for downstream analysis.
+- **Analysis** (`Analysis/`): analysis and visualization scripts, with a companion notebook (`Analysis/pipeline.ipynb`) for running the workflow and displaying results.
 
 Most scripts ship with **dataset-specific default paths** (e.g. `/Volumes/T7/...`). In practice you should **always pass your own arguments** when running them.
+
+## Analysis (new)
+
+The `Analysis/` folder contains the post-processing and evaluation pipeline for organelle instance segmentation, including metrics computation, confusion-style plots, and statistical charts derived from Imaris Excel summaries. The recommended entrypoint is the notebook `Analysis/pipeline.ipynb`, which runs the full workflow and renders the generated figures inline. For full details, see `Analysis/README.md`.
 
 ## Quick start (recommended)
 
